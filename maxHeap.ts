@@ -24,6 +24,10 @@ export class MaxHeap<T extends Object>{
         return max
     }
 
+    public peek():T{
+        return this.data[0]
+    }
+
     public getData():T[]{
         return this.data;
     }
