@@ -1,16 +1,16 @@
-class Orden{
+class Order{
     protected company:string;
     protected amount:number;
     protected initialAmount:number;
     protected price:number;
-    protected buy: boolean;
+    protected isPurchase: boolean;
 
-    constructor(company:string, amount:number, price:number, buy: boolean){
+    constructor(company:string, amount:number, price:number, isPurchase: boolean){
         this.company = company;
         this.amount = amount;
         this.initialAmount = amount;
         this.price = price;
-        this.buy = buy;
+        this.isPurchase = isPurchase;
     }
 
     get getInitialAmount(){
@@ -48,12 +48,12 @@ class Orden{
 
 }
 
-export class OrdenCompra extends Orden{
+export class OrderPurchase extends Order{
     constructor(company:string, amount:number, price:number){
         super(company, amount, price, true);
     }
 }
-export class OrdenVenta extends Orden{
+export class OrderSale extends Order{
     constructor(company:string, amount:number, price:number){
         super(company, amount, price, false);
     }
