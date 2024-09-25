@@ -63,14 +63,3 @@ export class MinHeap<T extends Object>{
         }
     }
 }
-
-let minHeap = new MinHeap(2);
-minHeap.insert(5);
-minHeap.insert(3);
-minHeap.insert(8);
-minHeap.insert(9);
-minHeap.insert(16);
-minHeap.insert(1);
-console.log(minHeap.getData())
-console.log(minHeap.getMin())
-console.log(minHeap.getData())

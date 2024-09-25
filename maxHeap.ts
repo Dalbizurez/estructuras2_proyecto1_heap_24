@@ -25,7 +25,7 @@ export class MaxHeap<T extends Object>{
     }
 
     public peek():T{
-        return this.data[0]
+        return this.data[1]
     }
 
     public getData():T[]{
@@ -63,15 +63,3 @@ export class MaxHeap<T extends Object>{
         }
     }
 }
-
-
-let maxHeap = new MaxHeap(2);
-maxHeap.insert(5);
-maxHeap.insert(3);
-maxHeap.insert(8);
-maxHeap.insert(9);
-maxHeap.insert(16);
-maxHeap.insert(1);
-console.log(maxHeap.getData())
-console.log(maxHeap.getMax())
-console.log(maxHeap.getData())
