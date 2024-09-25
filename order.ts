@@ -43,7 +43,7 @@ export class Order{
     }
 
     toString(){
-        return `${this.company}: ${this.amount} x $${this.price}`
+        return `${this.company}: ${this.initialAmount} x $${this.price}`
     }
 
 }
