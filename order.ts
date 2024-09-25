@@ -1,4 +1,4 @@
-class Order{
+export class Order{
     protected company:string;
     protected amount:number;
     protected initialAmount:number;
