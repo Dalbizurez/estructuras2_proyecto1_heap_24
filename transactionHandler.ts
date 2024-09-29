@@ -12,7 +12,6 @@ export function pair(order:Order, heap:MaxHeap<OrderPurchase>|MinHeap<OrderSale>
     let transactions:Transaction[] = [];
 
     let company:string = order.getCompany;
-    let value = order.getAmount * order.getPrice;
     if (order.getAmount == 0) return;
     
     for (let heapOrder of heap.getData()){
@@ -33,6 +32,7 @@ export function pair(order:Order, heap:MaxHeap<OrderPurchase>|MinHeap<OrderSale>
         }
     }
     for (let transaction of transactions){
-        console.log(transaction.toString())
+        console.log(transaction.toString());
     }
+    return transactions;
 }

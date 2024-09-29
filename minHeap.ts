@@ -25,7 +25,7 @@ export class MinHeap<T extends Object>{
     }
 
     public peek():T{
-        return this.data[0];
+        return this.data[1];
     }
 
     public getData():T[]{

@@ -4,7 +4,7 @@ import { MinHeap } from "./minHeap";
 import { OrderPurchase } from "./order";
 import { OrderSale } from "./order";
 
-import { pair } from "./pairingTest";
+import { pair } from "./transactionHandler";
 
 let purchaseOrders = new MaxHeap<OrderPurchase>();
 let saleOrders = new MinHeap<OrderSale>();
